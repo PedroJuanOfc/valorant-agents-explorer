@@ -49,6 +49,8 @@
 .navbar__list a[aria-current="page"] {
   color: #ffffff;
   border-bottom-color: #D5434F;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {
