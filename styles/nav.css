@@ -46,12 +46,12 @@
   border-radius: 4px;
 }
 
-.navbar__list a[aria-current="page"] {
+.navbar__list a[aria-current="page"],
+.navbar__list a[aria-current="location"] {
   color: #ffffff;
   border-bottom-color: #D5434F;
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   .navbar__list a {
