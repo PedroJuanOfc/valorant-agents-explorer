@@ -1,0 +1,23 @@
+:root {
+  --nav-h: 82px;
+}
+
+.hero {
+  min-height: calc(100vh - var(--nav-h));
+  background-image: url("../assets/images/background3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@supports (height: 100dvh) {
+  .hero {
+    min-height: calc(100dvh - var(--nav-h));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: center;
+  }
+}
