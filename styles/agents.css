@@ -7,7 +7,7 @@
   margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
+  gap: 4rem 1rem;
 }
 
 .agents__grid img {
