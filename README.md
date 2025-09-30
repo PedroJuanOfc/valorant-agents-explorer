@@ -8,7 +8,13 @@ A ideia é evoluir o app continuamente, mantendo-o utilizável a cada etapa.
 ![Homepage do Valorant Agents Explorer](assets/screenshots/homepage.png)
 
 ### Agents
-![Homepage do Valorant Agents Explorer](assets/screenshots/agentspage.png)
+![AgentsPage do Valorant Agents Explorer](assets/screenshots/agentspage.png)
+
+### Arsenal
+![ArsenalPage do Valorant Agents Explorer](assets/screenshots/arsenalpage.png)
+
+### Maps
+![MapsPage do Valorant Agents Explorer](assets/screenshots/mapspage.png)
 
 - Acesse a página (em andamento): [Valorant Agents Exlporer](https://pedrojuanofc.github.io/valorant-agents-explorer/)
 
