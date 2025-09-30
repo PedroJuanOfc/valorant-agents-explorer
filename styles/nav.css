@@ -132,53 +132,57 @@
     margin-top: 0;
   }
 
-@media (max-width: 768px) {
-  .navbar__list {
-    position: absolute;
-    top: calc(100% + 8px);
-    right: 16px;
-    left: 16px;
-    background: #151515;
-    border: 1px solid #232323;
-    border-radius: 12px;
-    padding: 12px;
-    display: grid;
-    gap: 8px;
-    z-index: 10000;
-    opacity: 0;
-    transform: translateY(-8px);
-    pointer-events: none;
-    transition: opacity .2s ease, transform .2s ease;
+  @media (max-width: 768px) {
+    .navbar__list {
+      position: absolute;
+      top: calc(100% + 8px);
+      right: 16px;
+      left: 16px;
+      background: #151515;
+      border: 1px solid #232323;
+      border-radius: 12px;
+      padding: 12px;
+      display: grid;
+      gap: 8px;
+
+      /* chave: eleva o dropdown acima do hero/background */
+      z-index: 10000;
+
+      opacity: 0;
+      transform: translateY(-8px);
+      pointer-events: none;
+      transition: opacity .2s ease, transform .2s ease;
+    }
+
+    .navbar.is-open .navbar__list {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .navbar__list a {
+      padding: 10px 12px;
+      border-radius: 8px;
+      border-bottom-color: transparent;
+    }
+
+    .navbar__list a:hover {
+      background: #1f1f1f;
+      color: #ffffff;
+    }
+
+    body.no-scroll {
+      overflow: hidden;
+    }
   }
 
-  .navbar.is-open .navbar__list {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
+  @media (prefers-reduced-motion: reduce) {
+    .navbar__list a {
+      transition: none;
+    }
 
-  .navbar__list a {
-    padding: 10px 12px;
-    border-radius: 8px;
-    border-bottom-color: transparent;
-  }
-
-  .navbar__list a:hover {
-    background: #1f1f1f;
-    color: #ffffff;
-  }
-
-  body.no-scroll {
-    overflow: hidden;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .navbar__list a {
-    transition: none;
-  }
-
-  .navbar__toggle .bar {
-    transition: none;
+    .navbar__toggle .bar {
+      transition: none;
+    }
   }
 }
