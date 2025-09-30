@@ -1,9 +1,10 @@
-.arsenal {
+.arsenal { 
   color: #ECEDEE;
   padding: 2rem 0;
 }
 
 .arsenal__grid {
+  margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
