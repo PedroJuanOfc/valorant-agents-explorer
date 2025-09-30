@@ -1,0 +1,56 @@
+.arsenal {
+  color: #ECEDEE;
+  padding: 2rem 0;
+}
+
+.arsenal__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.weapon-card .weapon-figure {
+  display: grid;
+  gap: 8px;
+}
+
+.weapon-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #0d0d0d;
+  border-radius: 10px;
+  padding: 10px;
+  display: block;
+}
+
+.weapon-name {
+  color: #ECEDEE;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.weapon-meta {
+  color: #9aa3ad;
+  font-size: 0.85rem;
+}
+
+.arsenal__status,
+.arsenal__error { color: #ECEDEE; }
+
+.arsenal__error button {
+  margin-top: 8px;
+  background: #D5434F; color: #fff;
+  border: 0; border-radius: 6px; padding: 6px 10px; cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .arsenal__grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 800px) {
+  .arsenal__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .arsenal__grid { grid-template-columns: 1fr; }
+}
