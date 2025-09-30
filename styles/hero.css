@@ -1,13 +1,105 @@
-:root {
-  --nav-h: 82px;
-}
-
 .hero {
+  position: relative;
   min-height: calc(100vh - var(--nav-h));
+  display: flex;
+  align-items: center;
   background-image: url("../assets/images/background3.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: right center;
+  color: #ECEDEE;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, .72) 0%,
+      rgba(0, 0, 0, .45) 45%,
+      rgba(0, 0, 0, .18) 65%,
+      rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+  min-height: inherit;
+  display: grid;
+  align-content: center;
+}
+
+.hero__content {
+  padding-bottom: 72px;
+}
+
+.hero__badge {
+  position: absolute;
+  bottom: clamp(12px, 2vh, 20px);
+  left: clamp(16px, 4vw, 40px);
+  right: clamp(16px, 4vw, 40px);
+  z-index: 2;
+  display: block;
+  font-size: 0.9rem;
+  color: #bfc2c7;
+  opacity: .95;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .hero__badge { text-align: center; }
+}
+
+.hero__title {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.hero__subtitle {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #d9dadd;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.hero__badge {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 0.9rem;
+  color: #bfc2c7;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .8rem 1.1rem;
+  border-radius: .5rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: filter .15s ease, transform .15s ease, background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+
+.btn--primary {
+  background-color: #D5434F;
+  color: #ECEDEE;
+  border-color: #b83a44;
+  box-shadow: 0 8px 24px -8px rgba(0, 0, 0, .6);
+}
+
+.btn--primary:hover {
+  filter: brightness(1.03);
+  transform: translateY(-1px);
 }
 
 @supports (height: 100dvh) {
@@ -16,8 +108,23 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .hero {
     background-position: center;
+  }
+
+  .hero__content {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .hero__actions {
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
   }
 }
