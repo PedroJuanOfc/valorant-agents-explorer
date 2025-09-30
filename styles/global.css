@@ -1,6 +1,7 @@
 :root {
   --container-max: 1280px;
   --container-pad: 1rem;
+  --nav-h: 5.125rem;
 }
 
 .container {

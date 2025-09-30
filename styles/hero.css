@@ -1,24 +1,15 @@
-:root {
-  --nav-h: 5.125rem;
-}
-
-/* HERO */
 .hero {
   position: relative;
   min-height: calc(100vh - var(--nav-h));
   display: flex;
   align-items: center;
-
-  /* imagem de fundo */
   background-image: url("../assets/images/background3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
-  /* “ancora” o lado direito no desktop */
   color: #ECEDEE;
 }
 
-/* overlay p/ legibilidade do texto sobre a arte */
 .hero::before {
   content: "";
   position: absolute;
@@ -34,13 +25,30 @@
 .hero .container {
   position: relative;
   z-index: 1;
-  /* fica acima do overlay */
+  min-height: inherit;
+  display: grid;
+  align-content: center;
 }
 
 .hero__content {
-  max-width: 680px;
-  display: grid;
-  gap: 16px;
+  padding-bottom: 72px;
+}
+
+.hero__badge {
+  position: absolute;
+  bottom: clamp(12px, 2vh, 20px);
+  left: clamp(16px, 4vw, 40px);
+  right: clamp(16px, 4vw, 40px);
+  z-index: 2;
+  display: block;
+  font-size: 0.9rem;
+  color: #bfc2c7;
+  opacity: .95;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .hero__badge { text-align: center; }
 }
 
 .hero__title {
