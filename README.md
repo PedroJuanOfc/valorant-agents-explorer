@@ -4,8 +4,11 @@ Projeto em desenvolvimento.
 Aplicação web focada em **explorar agentes do Valorant** — começando por nome, imagens, função/role e habilidades. 
 A ideia é evoluir o app continuamente, mantendo-o utilizável a cada etapa.
 
+- Acesse a página (em andamento): [Valorant Agents Exlporer](https://pedrojuanofc.github.io/valorant-agents-explorer/)
+
+## Páginas Web
 ### HomePage
-![Homepage do Valorant Agents Explorer](assets/screenshots/homepage.png)
+![Homepage do Valorant Agents Explorer](assets/screenshots/homepage.png) 
 
 ### Agents
 ![AgentsPage do Valorant Agents Explorer](assets/screenshots/agentspage.png)
@@ -16,7 +19,15 @@ A ideia é evoluir o app continuamente, mantendo-o utilizável a cada etapa.
 ### Maps
 ![MapsPage do Valorant Agents Explorer](assets/screenshots/mapspage.png)
 
-- Acesse a página (em andamento): [Valorant Agents Exlporer](https://pedrojuanofc.github.io/valorant-agents-explorer/)
+## Páginas Mobile
+<p align="center">
+  <img src="assets/screenshots/homemobilepage.jpg" alt="Home (mobile)" width="240">
+  <img src="assets/screenshots/agentsmobilepage.jpg" alt="Agents (mobile)" width="240">
+  <img src="assets/screenshots/arsenalmobilepage.jpg" alt="Arsenal (mobile)" width="240">
+  <img src="assets/screenshots/mapsmobilepage.jpg" alt="Maps (mobile)" width="240">
+</p>
+
+
 
 ## Visão geral
 - **Layout-first**: primeiro a interface (HTML/CSS/JS), depois a integração de dados.
