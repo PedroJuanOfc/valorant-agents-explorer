@@ -34,7 +34,7 @@ A ideia é evoluir o app continuamente, mantendo-o utilizável a cada etapa.
 
 
 ## Próximos passos
-- [ ] Conectar listagem de agentes à API (nome, retrato, role).
+- [x] Conectar listagem de agentes à API (nome, retrato, role).
 - [ ] Página de detalhes com habilidades e descrições.
 - [ ] Filtros (role/alfabético) e busca.
 - [ ] Animações e estados de carregamento.
