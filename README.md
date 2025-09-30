@@ -4,6 +4,10 @@ Projeto em desenvolvimento.
 Aplicação web focada em **explorar agentes do Valorant** — começando por nome, imagens, função/role e habilidades. 
 A ideia é evoluir o app continuamente, mantendo-o utilizável a cada etapa.
 
+![Homepage do Valorant Agents Explorer](assets/screenshots/homepage.png)
+
+- Acesse a página (em andamento): [Valorant Agents Exlporer](https://pedrojuanofc.github.io/valorant-agents-explorer/)
+
 ## Visão geral
 - **Layout-first**: primeiro a interface (HTML/CSS/JS), depois a integração de dados.
 - **Dados públicos** via [Valorant-API](https://valorant-api.com/).
@@ -16,7 +20,6 @@ A ideia é evoluir o app continuamente, mantendo-o utilizável a cada etapa.
 
 ## Stack
 - **Front-end**: HTML, CSS, JavaScript (planejo portar para React depois).
-- **Deploy**: GitHub Pages ou Vercel.
 - **API**: Valorant-API.
 
 ## Endpoints de referência (API)
@@ -25,11 +28,6 @@ A ideia é evoluir o app continuamente, mantendo-o utilizável a cada etapa.
 
 > Observação: Os dados e assets são propriedade da Riot Games. A Valorant-API é um projeto da comunidade (não oficial).
 
-<!-- ## Captura de tela
-Adicione um screenshot do layout quando possível:
-```
-![Screenshot](./assets/screenshot.png)
-``` -->
 
 ## Próximos passos
 - [ ] Conectar listagem de agentes à API (nome, retrato, role).
