@@ -1,48 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valorant Agents Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valorant Agents Explorer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles/index.css">
-</head>
-
-<body>
-  <nav class="navbar" aria-label="Navegação principal">
-    <div class="container">
-      <img src="assets/valorant.png" alt="Valorant logo" class="navbar__logo">
-
-      <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="bar" aria-hidden="true"></span>
-        <span class="bar" aria-hidden="true"></span>
-        <span class="bar" aria-hidden="true"></span>
-      </button>
-
-      <ul id="primary-navigation" class="navbar__list" role="list">
-        <li><a href="index.html" aria-current="page">INÍCIO</a></li>
-        <li><a href="agents.html">AGENTES</a></li>
-        <li><a href="arsenal.html">ARSENAL</a></li>
-        <li><a href="maps.html">MAPAS</a></li>
-      </ul>
-    </div>
-  </nav>
-  <main>
-    <section class="agents">
+  <body>
+    <nav class="navbar" aria-label="Navegação principal">
       <div class="container">
-        <h1>AGENTES</h1>
-        <div class="agents__grid" id="agentsGrid"></div>
+        <img
+          src="assets/valorant.png"
+          alt="Valorant logo"
+          class="navbar__logo"
+        />
+
+        <button
+          class="navbar__toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+        </button>
+
+        <ul id="primary-navigation" class="navbar__list" role="list">
+          <li><a href="index.html" aria-current="page">INÍCIO</a></li>
+          <li><a href="agents.html">AGENTES</a></li>
+          <li><a href="arsenal.html">ARSENAL</a></li>
+          <li><a href="maps.html">MAPAS</a></li>
+        </ul>
       </div>
-    </section>
-  </main>
-  <script src="scripts/active-link.js"></script>
-  <script src="scripts/nav.js"></script>
-  <script src="scripts/agents.js" defer></script>
+    </nav>
+    <main>
+      <section class="agents">
+        <div class="container">
+          <h1>AGENTES</h1>
+          <div class="agents__grid" id="agentsGrid"></div>
+        </div>
+      </section>
+    </main>
 
-</body>
+    <div id="agentModal" class="modal" hidden>
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" aria-label="Fechar">✕</button>
+        <div class="modal__body">
+          <img id="agentImage" alt="Agente" />
+          <h2 id="agentName"></h2>
+          <p id="agentDescription"></p>
+          <h3>Habilidades</h3>
+          <ul id="agentAbilities"></ul>
+        </div>
+      </div>
+    </div>
 
+    <script src="scripts/active-link.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/agents.js" defer></script>
+  </body>
 </html>

@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valorant Agents Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valorant Agents Explorer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles/index.css">
-</head>
-
-<body>
-  <nav class="navbar" aria-label="Navegação principal">
-    <div class="container">
-      <img src="assets/valorant.png" alt="Valorant logo" class="navbar__logo">
-
-      <button class="navbar__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="bar" aria-hidden="true"></span>
-        <span class="bar" aria-hidden="true"></span>
-        <span class="bar" aria-hidden="true"></span>
-      </button>
-
-      <ul id="primary-navigation" class="navbar__list" role="list">
-        <li><a href="index.html">INÍCIO</a></li>
-        <li><a href="agents.html" aria-current="page">AGENTES</a></li>
-        <li><a href="arsenal.html">ARSENAL</a></li>
-        <li><a href="maps.html">MAPAS</a></li>
-      </ul>
-    </div>
-  </nav>
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
+  <body>
+    <nav class="navbar" aria-label="Navegação principal">
       <div class="container">
-        <div class="hero__content">
-          <h1 id="hero-title" class="hero__title">Valorant Agents Explorer</h1>
-          <p class="hero__subtitle">
-            Explore agentes, habilidades, armas e mapas — tudo em um só lugar.
-          </p>
+        <img
+          src="assets/valorant.png"
+          alt="Valorant logo"
+          class="navbar__logo"
+        />
 
-          <div class="hero__actions">
-            <a href="agents.html" class="btn btn--primary">Agentes</a>
-            <a href="arsenal.html" class="btn btn--primary">Arsenal</a>
-            <a href="maps.html" class="btn btn--primary">Mapas</a>
-          </div>
+        <button
+          class="navbar__toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+          <span class="bar" aria-hidden="true"></span>
+        </button>
 
-          <small class="hero__badge">
-            v0.1 • Em desenvolvimento • Não afiliado à Riot • Fonte: valorant-api.com
-          </small>
-        </div>
+        <ul id="primary-navigation" class="navbar__list" role="list">
+          <li><a href="index.html">INÍCIO</a></li>
+          <li><a href="agents.html" aria-current="page">AGENTES</a></li>
+          <li><a href="arsenal.html">ARSENAL</a></li>
+          <li><a href="maps.html">MAPAS</a></li>
+        </ul>
       </div>
-    </section>
-  </main>
+    </nav>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero__content">
+            <h1 id="hero-title" class="hero__title">
+              Valorant Agents Explorer
+            </h1>
+            <p class="hero__subtitle">
+              Explore agentes, habilidades, armas e mapas — tudo em um só lugar.
+            </p>
 
+            <div class="hero__actions">
+              <a href="agents.html" class="btn btn--primary">Agentes</a>
+              <a href="arsenal.html" class="btn btn--primary">Arsenal</a>
+              <a href="maps.html" class="btn btn--primary">Mapas</a>
+            </div>
 
-  <script src="scripts/active-link.js"></script>
-  <script src="scripts/nav.js"></script>
+            <small class="hero__badge">
+              v0.1 • Em desenvolvimento • Não afiliado à Riot • Fonte:
+              valorant-api.com
+            </small>
+          </div>
+        </div>
+      </section>
+    </main>
 
-
-</body>
-
+    <script src="scripts/active-link.js"></script>
+    <script src="scripts/nav.js"></script>
+  </body>
 </html>
