@@ -12,6 +12,10 @@
 
 .weapon-card {
   cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.weapon-card:hover {
+  transform: translateY(-3px);
 }
 
 .weapon-card .weapon-figure {
