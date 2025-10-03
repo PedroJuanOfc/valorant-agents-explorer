@@ -1,5 +1,5 @@
-.arsenal { 
-  color: #ECEDEE;
+.arsenal {
+  color: #ecedee;
   padding: 2rem 0;
 }
 
@@ -8,6 +8,10 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
+}
+
+.weapon-card {
+  cursor: pointer;
 }
 
 .weapon-card .weapon-figure {
@@ -26,7 +30,7 @@
 }
 
 .weapon-name {
-  color: #ECEDEE;
+  color: #ecedee;
   font-size: 0.95rem;
   font-weight: 600;
   line-height: 1.2;
@@ -38,20 +42,32 @@
 }
 
 .arsenal__status,
-.arsenal__error { color: #ECEDEE; }
+.arsenal__error {
+  color: #ecedee;
+}
 
 .arsenal__error button {
   margin-top: 8px;
-  background: #D5434F; color: #fff;
-  border: 0; border-radius: 6px; padding: 6px 10px; cursor: pointer;
+  background: #d5434f;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
-  .arsenal__grid { grid-template-columns: repeat(3, 1fr); }
+  .arsenal__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 800px) {
-  .arsenal__grid { grid-template-columns: repeat(2, 1fr); }
+  .arsenal__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 480px) {
-  .arsenal__grid { grid-template-columns: 1fr; }
+  .arsenal__grid {
+    grid-template-columns: 1fr;
+  }
 }
